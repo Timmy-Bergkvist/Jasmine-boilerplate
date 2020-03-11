@@ -1,3 +1,29 @@
+
+describe("my whatCanIDrink function", function(){
+    beforEach(function(){
+        drink = new whatCanIDrink();
+    });
+
+    describe("Check age", function(){
+        it("should exist", function(){
+            expect(whatCanIDrink).toBeDefiend();
+        });
+        it("should return sorry you cant drink", function(){
+            var result = whatCanIDrink
+            expect(result).toBe("sorry you cant drink");
+        });
+        it("should return Drink beer", function(){
+            var result = whatCanIDrink
+            expect(result).toBe("Drink beer");
+        });
+        it("should return sorry no nej go home", function(){
+            var result = whatCanIDrink
+            expect(result).toBe("sorry no nej go home");
+        });
+    });
+});
+
+/*
 describe("Calculator", function(){
 
     beforeEach(function(){
@@ -22,3 +48,4 @@ describe("Calculator", function(){
         });
     });
 });
+*/
